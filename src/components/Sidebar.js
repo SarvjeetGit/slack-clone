@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 import { useCollection } from 'react-firebase-hooks/firestore';
-import { db } from '../firebase';
+import { auth, db } from '../firebase';
 import {
     Add,
     Apps,
@@ -17,10 +17,11 @@ import {
     PeopleAlt,
 } from '@material-ui/icons';
 import SidebarOption from './SidebarOption';
+import { useAuthState } from 'react-firebase-hooks/auth';
 
 function Sidebar() {
-    const [channels, loading, error] = useCollection(db.collection('rooms'));
-
+    const [channels] = useCollection(db.collection('rooms'));
+    const [user] = useAuthState(auth);
     return (
         <SidebarContainer>
             <SidebarHeader>
@@ -28,7 +29,7 @@ function Sidebar() {
                     <h2>SARVJEET'S HQ</h2>
                     <h3>
                         <FiberManualRecordIcon />
-                        Sarvjeet Kumar
+                        {user.displayName}
                     </h3>
                 </SidebarInfo>
                 <Create />
