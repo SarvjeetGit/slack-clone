@@ -1,42 +1,39 @@
-# DevConnector ‎‍💻
-- A Social network for developers, built on the MERN stack
-- Functionalities of the app:
-    - Signup or login into DevConnector
-    - Add Details to your profile (Education, Experience, Social Links etc.)
-    - Add your Github username to display your top five repositories
-    - Post your updates, Like and Comment on different posts in the Dev community
+# Realtime Chat App(slack clone) ‎‍💻
 
-***
+-   A realtime chat app, built using React and Firebase
+-   Functionalities of the app:
+    -   Google login
+    -   Create channels for chat
+    -   Realtime chat experience
+
+---
 
 ## Screenshots:
-|Screen Name | Screenshots |
-|---|--|
-|Landing Page|<img src='./screenshots/ss1.png' alt='Screenshot of the App'>|
 
+| Screen Name    | Screenshots                                                     |
+| -------------- | --------------------------------------------------------------- |
+| Landing Page   | <img src='./public/images/ss1.png' alt='Screenshot of the App'> |
+| Chat Interface | <img src='./public/images/ss2.png' alt='Screenshot of the App'> |
 
+---
 
-***
 ## Run app on your local machine:
-- Clone the repository 
+
+-   Clone the repository
     ```bash
-    git clone https://github.com/SarvjeetGit/DevConnector.git
+    git clone https://github.com/SarvjeetGit/slack-clone.git
     ```
-- Open the project in your favorite editor 
+-   Open the project in your favorite editor
     ```bash
-    cd DevConnector/ 
+    cd slack-clone/
     ```
-- Install the dependencies on Server Side as well as client side
+-   Install the dependencies
     ```bash
     npm i
-    cd client/
-    npm i
-    cd ..
-     ```
-- Run the project in your local machine
-    ```bash
-    npm run dev
     ```
-***
-This entire project is based on _Brad Traversy's_ udemy course named [MERN Stack Front To Back: Full Stack React, Redux & Node.js](https://www.udemy.com/course/mern-stack-front-to-back/)
-***
+-   Run the project in your local machine
+    ```bash
+    npm start
+    ```
+
 Do fork and star ⭐ the repo if you find it appreciable. For any queries and suggestions, Conatct me at my mailing address.
